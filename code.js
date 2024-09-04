@@ -1,5 +1,5 @@
 function binarySearch(list, element) {
-    var midpoint = list.length()/2 ;
+    var midpoint = list.length()/2 - 1 ;
     var mid = list[midpoint];
     if (mid > element) {
         binarySearch(list.slice(0,midpoint);
