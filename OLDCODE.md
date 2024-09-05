@@ -4,11 +4,9 @@ function binarySearch(list, element) {
     if (element > mid) {
         list = list.slice(list[midpoint+1], list.length);
         binarySearch(list, element);
-    }
     if (element < mid) {
         list = list.slice(0, list[midpoint]);
         binarySearch(list, element);
-    }
     if (element == mid) { 
         return midpoint;
     }
