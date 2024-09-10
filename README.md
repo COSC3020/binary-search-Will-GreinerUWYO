@@ -7,7 +7,7 @@ not there.
 Use the template in `code.js`. The tests in `code.test.js` will be run
 automatically every time you push to Github; if they pass you are done.
 
-Sources: I used this website for the basics of how the algorithm works. It has code, but I didn't look at it.
+Sources: I used this website for the basics of how the algorithm works. It has code, but I only used it for their mid logic.
 https://www.geeksforgeeks.org/binary-search/
 
 Asked the TA for help with the logic, the TA suggested using floor instead of -1 on my midpoint variable.
