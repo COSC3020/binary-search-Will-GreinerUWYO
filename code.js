@@ -1,23 +1,32 @@
 function binarySearch(list, element) {
-    int low = 0;
-    int high = list.length - 1;
-    int mid = high/2 - 1;
-    int temp;
-
-    while (list[mid] != element) {
-        if (list[mid] > element) {
-            temp = mid;
-            low = temp;
-            mid = low + (high - low) / 2; 
+    function binarySearch(list, element) {
+        var low = 0;
+        var high = list.length - 1;
+        var mid = high/2 - 1;
+        var temp;
+    
+        while (list[mid] != element) {
+            if (list[mid] > element) {
+                temp = mid;
+                low = temp;
+                mid = low + (high - low) / 2; 
+                System.out.println(mid);
+                if (list[mid] == element) {
+                    System.out.println("yay")
+                    return mid;
+                }
+            }
+            if (list[mid] < element) {
+                temp = mid;
+                high = temp
+                mid = low + (high - low) / 2;
+                System.out.println(mid);
+                if (list[mid] == element) {
+                    System.out.println("yay")
+                    return mid;
+                }
+            }
         }
-        if (list[mid] < element) {
-            temp = mid;
-            high = temp
-            mid = low + (high - low) / 2;
-        }
+        return -1;
     }
-    return mid;
-    
-    
-    return -1;
 }
