@@ -13,4 +13,4 @@ https://www.geeksforgeeks.org/binary-search/
 Asked the TA for help with the logic, the TA suggested using floor instead of -1 on my midpoint variable.
 I asked Lars for help with figuring out how to make my recursive method work, and he suggested creating a new function to help me track the index value.
 
-After bashing my head into recursion, I flipped a coin and it decided I should switch to a non-recursive method. The recursive code is in a seperate .md file
+After bashing my head into recursion, I decided I should switch to a non-recursive method. The recursive code I wrote is in a seperate .md file and I might come back to it as the wild card.
