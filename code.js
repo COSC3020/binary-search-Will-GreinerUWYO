@@ -1,16 +1,23 @@
 function binarySearch(list, element) {
-    var midpoint = (list.length / 2)-1;
-    var mid = list[midpoint];
-    if (element > mid) {
-        list = list.slice(list[midpoint+1], list.length);
-        binarySearch(list, element);
+    int low = 0;
+    int high = list.length - 1;
+    int mid = high/2 - 1;
+    int temp;
+
+    while (list[mid] != element) {
+        if (list[mid] > element) {
+            temp = mid;
+            low = temp;
+            mid = low + (high - low) / 2; 
+        }
+        if (list[mid] < element) {
+            temp = mid;
+            high = temp
+            mid = low + (high - low) / 2;
+        }
     }
-    else if (element < mid) {
-        list = list.slice(0, list[midpoint]);
-        binarySearch(list, element);
-    }
-    else (element == mid) { 
-        return midpoint;
-    }
+    return mid;
+    
+    
     return -1;
 }
