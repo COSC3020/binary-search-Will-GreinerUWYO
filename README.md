@@ -17,3 +17,5 @@ After bashing my head into recursion, I decided I should switch to a non-recursi
 
 I emailed Lars about difficulty and he told me the test program only wanted the first valid option.
 The breakthrough came from Ishita Patel who gave me the nested for loop, which allowed the code to only return the first correct option. 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
