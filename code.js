@@ -12,12 +12,13 @@ function binarySearch(list, element) {
         }
         //Undershot the target!
         else if (list[mid] > element) {
-            low = mid - 1;
+            low = mid + 1;
         }
         //Overshot the target!
-        else{
-            high = mid + 1;
+        else if (list[mid] < element) {
+            high = mid - 1;
         }
+        else {return -1;}
+
     }
-    return -1;
 }
