@@ -12,7 +12,7 @@ function binarySearch(list, element) {
             low = mid + 1;
         }
         //Overshot the target!
-        else if (list[mid] < element) {
+        else{
             high = mid - 1;
         }
     }
