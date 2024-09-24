@@ -3,8 +3,8 @@ function binarySearch(list, element) {
     var high = list.length - 1;
     var mid = high/2 - 1;
     var temp;
-    
-    while (list[mid] != element) {
+
+    while (low <= high) {
         if (list[mid] > element) {
             temp = mid;
             low = temp;
@@ -28,3 +28,4 @@ function binarySearch(list, element) {
     }
     return -1;
 }
+
