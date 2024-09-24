@@ -7,6 +7,15 @@ function binarySearch(list, element) {
         let mid = Math.floor((low + high) / 2);
         //Found the target!
         if (list[mid] === element) {
+            let first;
+            for(let i = mid; list[i] == element; i--)
+            {
+                if(list[i] == element)
+                {
+                    first = i;
+                }
+            }
+           return first;
             return mid;
         }
         //Undershot the target!
