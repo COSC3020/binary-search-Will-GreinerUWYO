@@ -5,9 +5,10 @@ function binarySearch(list, element) {
     while (low <= high) {
         
         let mid = Math.floor((low + high) / 2);
-        
         //Found the target!
-        
+        if (list[mid] === element) {
+            return mid;
+        }
         //Undershot the target!
         if (list[mid] < element) {
             low = mid + 1;
@@ -16,10 +17,6 @@ function binarySearch(list, element) {
         else if (list[mid] > element) {
             high = mid - 1;
         }
-        if (list[mid] === element) {
-            return mid;
-        }
-        else {return -1;}
-
     }
+    return -1;
 }
