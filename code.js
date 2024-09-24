@@ -5,25 +5,17 @@ function binarySearch(list, element) {
     var temp;
 
     while (low <= high) {
-        if (list[mid] > element) {
-            temp = mid;
-            low = temp;
-            mid = low + (high - low) / 2; 
-            System.out.println(mid);
-            if (list[mid] == element) {
-                System.out.println("yay")
-                return mid;
-            }
+        //Found the target!
+        if (list[mid] == element) {
+            return mid;
         }
+        //Undershot the target!
+        if (list[mid] > element) {
+            low = mid + 1;
+        }
+        //Overshot the target!
         if (list[mid] < element) {
-            temp = mid;
-            high = temp
-            mid = low + (high - low) / 2;
-            System.out.println(mid);
-            if (list[mid] == element) {
-                System.out.println("yay")
-                return mid;
-            }
+            high = mid - 1;
         }
     }
     return -1;
