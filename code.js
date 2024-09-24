@@ -1,8 +1,8 @@
 function binarySearch(list, element) {
     var low = 0;
     var high = list.length - 1;
-    var mid = list.length / 2;
     while (low < high) {
+        var mid = high/2 - 1;
         //Found the target!
         if (list[mid] == element) {
             return mid;
